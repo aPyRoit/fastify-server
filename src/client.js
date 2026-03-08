@@ -1,5 +1,8 @@
 document.getElementById('apiButton').addEventListener('click', () => {
   fetch('/api')
     .then(res => res.text())
-    .then(data => document.getElementById('result').innerText = data)
+    .then(data => {
+      document.getElementById('result').innerText = data
+      console.log(data)
+    })
 })
