@@ -1,0 +1,1 @@
+Сервер запускается командой make start либо же node src/index.js
