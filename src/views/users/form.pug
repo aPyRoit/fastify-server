@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Новый пользователь
+  body
+    main
+      h1 Создание пользователя
+      
+      form(action="/users" method="POST")
+        div
+          label(for="username") Имя:
+          input(type="text" id="username" name="username" required)
+        
+        div
+          label(for="email") Email:
+          input(type="email" id="email" name="email" required)
+        
+        div
+          button(type="submit") Создать
+          a(href="/users") Отмена

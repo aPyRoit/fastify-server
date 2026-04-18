@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Все пользователи
+  body
+    main
+      h1 Список пользователей
+      a(href="/users/create") 'Создать пользователя'
+      each user in users
+        div
+          h2= user.username
+          // p ID: #{user.id}
+          // p= 'ID: ' + user.id
+          p= 'Email: ' + user.email
+          p= `ID: ${user.id}`
