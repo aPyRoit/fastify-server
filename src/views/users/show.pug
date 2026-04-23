@@ -4,6 +4,12 @@ html
     title Конкретный пользователь
   body
     main
-      h1= user.username
-      p= 'Email: ' + user.email
-      p= 'ID: ' + user.id
+      div.user 
+        p.username Username: #[span= user.username]
+        p.email Email: #[span= user.email]
+        p.id ID: #[span= user.id]
+        button.delete Удалить пользователя
+        button
+          a(href='/users') К списку пользователей
+    script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+    script(src='/views/userListener.js')

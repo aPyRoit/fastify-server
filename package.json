@@ -10,6 +10,7 @@
   "dependencies": {
     "@fastify/autoload": "^6.0.0",
     "@fastify/formbody": "^8.0.2",
+    "@fastify/postgres": "^6.0.2",
     "@fastify/sensible": "^6.0.0",
     "@fastify/static": "^9.1.1",
     "@fastify/view": "^11.1.1",
@@ -64,6 +65,7 @@
     "p-locate": "^3.0.0",
     "p-try": "^2.2.0",
     "path-exists": "^3.0.0",
+    "pg": "^8.20.0",
     "pino": "^10.3.1",
     "pino-abstract-transport": "^3.0.0",
     "pino-pretty": "^13.1.3",
